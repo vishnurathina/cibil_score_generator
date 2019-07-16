@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Details</title>
+	<script type="text/javascript" src="js/verify.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/log.css">
+</head>
+<body style="background-image:url(image/bg4.png);background-size: cover;">
+    <h3 align="center">Fill the details get score!!</h3>
+<form name="details" method="post" action="../controller/Control.php" onsubmit="return (nameValidation(details)&& panValidation(details))">
+
+    <div class = "person">
+   <label>Enter Name(as per in PAN card):</label> <input type="text" name="user_name" required><br><br>
+   <label>Enter PAN:</label><input type="text" name="pan_num" minlength="10" maxlength="10" required><br><br>
+    <label>Gender</label>
+    <input type="radio" name="gender" value="male"required> Male
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="other"> Other<br><br>
+   <label>Enter DOB:</label> <input type="date" name="dob" required><br><br>
+   <label>Enter Address:</label> <input type="text" name="address" required><br><br>
+   <label>Enter pin code:</label><input type="number" name="pincode" required><br><br>
+   <label>Enter Mail id:</label><input type="email" name="email" required><br><br>
+    </div>
+	<div class = "card">
+    <label>Monthly Income:</label> <input type="number" name="income" required><br><br>
+    <label>EMI:</label><input type="number" name="emi"><br><br>
+   <label>Credit card issued:</label><input type="date" name="cardissue" required><br><br>
+   <label>Credit expire:</label><input type="date" name="cardexpire" required><br><br>
+   <label>Credit Card Limit:</label><input type="number" name="cclimit" required><br><br>
+   <label>Credit Card Utilized:</label><input type="number" name="ccutilize" required><br><br>
+    </div>
+    <div class = "loan">
+   <label>Personal loan total amount(if applied):</label><input type="number" name="plamount" required><br><br>
+   <label>Amount paid:</label><input type="number" name="plapaid" required><br><br>
+   <label>Duration: start date</label><input type="date" name="plstart" ><br><br>
+   <label>end date</label><input type="date" name="plend" ><br><br>
+   <label>Home loan total amount(if applied):</label><input type="number" name="hlamount" required><br><br>
+   <label>Amount paid:</label><input type="number" name="hlapaid"required><br><br>
+   <label>Duration: start date</label><input type="date" name="hlstart"><br><br>
+   <label>end date</label><input type="date" name="hlend"><br><br>
+    </div>
+    <input id="sub"  type="submit" name="submitdetails"  value="GetScore" align="center" ><br><br>
+    <a id ="ad" href="login.html">Admin</a>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+img
+{
+	background-size: cover;
+}
+ 
+ .person{
+ 	float : left;
+ 	margin-top : 50px;
+ }
+ .card{
+ 	float : left;
+ 	margin-top : 50px;
+ 	margin-left: 120px;
+ }
+ .loan{
+ 	float : right;
+ 	margin-top : 50px;
+ 	margin-right: 80px;
+ }
+ 
+ #sub{
+ 	margin-top : 250px;
+ 	margin-left: 300px;
+ }
+ label{
+    display: inline-block;
+    float: left;
+    color:indigo;
+
+    width: 170px;
+    text-align: right;
+}
+
+ input[type="submit"]
+ {
+
+ 	border: none;
+ 	outline: none;
+ 	height: 40px;
+ 	background: forestgreen;
+ 	color: #fff;
+ 	font-size: 18px;
+ 	border-radius: 30px;
+
+ }
+ input[type="submit"]:hover
+ {
+ 	cursor: pointer;
+ 	background:black; 
+ }
+ a:hover
+ {
+ 	color: red;
+ }
+ a
+ {
+ 	color: chocolate;
+ 	font-style: bold;
+ 	font-size: 20px;
+ }
+
+ #ad{
+ 	margin-top : 280px;
+ 	margin-left: 1400px;
+ }
+ #re{
+ 	margin-top: 30px;
+ 	margin-left: 700px;
+ }

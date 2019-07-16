@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>adminlogincibil</title>
+	<link rel="stylesheet" type="text/css" href="css/log.css">
+	<script type="text/javascript" src="js/verify.js"></script>
+</head>
+<body style="background-image:url(image/bg1.jpg);background-size: cover;">
+	<h3 align="center">Hiii Admin</h3>
+
+<form name="login"  method="post" action="../controller/Control.php" onsubmit="return (nameValidation(login)&& panValidation(login))">
+	Enter Name(as per in PAN card):<input type="text" name="user_name" required><br><br>
+	Enter Permanent Account Number:<input type="text" name="pan_num" maxlength="10" minlength="10" required><br><br>
+	<input id="re" type="submit" name="Admin" value="Submit">
+</form>
